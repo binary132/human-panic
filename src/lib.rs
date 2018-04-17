@@ -63,7 +63,7 @@ pub fn print_msg(file_path: String, meta: &Metadata) -> IoResult<()> {
   let mut buffer = stderr.buffer();
   buffer.set_color(ColorSpec::new().set_fg(Some(Color::Red)))?;
 
-  writeln!(&mut buffer, "Well, this is embarrasing.\n")?;
+  writeln!(&mut buffer, "Well, this is embarrassing.\n")?;
   writeln!(&mut buffer, "{} had a problem and crashed. To help us diagnose the problem you can send us a crash report.\n", name)?;
   writeln!(&mut buffer, "We have generated a report file at \"{}\". Submit an issue or email with the subject of \"{} Crash Report\" and include the report as an attachment.\n", &file_path, name)?;
 
